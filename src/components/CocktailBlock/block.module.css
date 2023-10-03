@@ -1,0 +1,16 @@
+.cardBlock {
+  min-width: 26rem;
+  width: 100%;
+  margin-bottom: 30px; 
+}
+
+.favorites {
+  float: right;
+  cursor: pointer;
+  font-size: 25px;
+ 
+}
+
+.favorites.active {
+  color: yellow;
+} 

@@ -1,1 +1,24 @@
-# amused_test
+## Instalation Guide
+
+clone the git repository from the [https://github.com/erangakapukotuwa/amused_test](https://github.com/erangakapukotuwa/amused_test)
+
+        git clone git@github.com:erangakapukotuwa/amused_test.git
+
+run `npm install` or `yarn install` to instll the packages.
+
+```bash
+npm install
+# or
+yarn install
+```
+
+
+Next, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
