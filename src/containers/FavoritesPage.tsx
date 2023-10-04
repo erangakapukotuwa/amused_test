@@ -34,21 +34,11 @@ const FavoritesPage: FC = () => {
       <Container>
         {isLoading && <Spinner animation="grow" /> }
         <Row >
-          <InputGroup className="mb-3">
-            <InputGroup.Text id="inputGroup-sizing-default" >
-              Search
-            </InputGroup.Text>
-            <Form.Control
-              aria-label="Default"
-              aria-describedby="inputGroup-sizing-default"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              placeholder="Search by name" 
-            />
-          </InputGroup>
-        </Row>
-        <Row >
-          {cocktailsList}
+        { data?.drinks?.length> 0 ?
+            cocktailsList
+            :
+              <p>No drinks found</p>
+          }
         </Row>
       </Container>
     </>

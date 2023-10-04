@@ -58,7 +58,11 @@ const HomePage: FC = () => {
           </InputGroup>
         </Row>
         <Row >
-          {cocktailsList}
+          { data?.drinks?.length> 0 ?
+            cocktailsList
+            :
+              <p>No drinks found</p>
+          }
         </Row>
       </Container>
     </>
